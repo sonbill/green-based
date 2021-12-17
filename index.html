@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/app.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-[#FAF1E6]">
+    <!-- OVERLAY -->
+    <div id="over-Lay" class="hidden fixed bg-zinc-700 inset-0 opacity-50"></div>
+    <!-- MOBILE NAV -->
+    <div id="mobile__nav" class="h-full fixed w-[100px] bg-neutral-700 p-2 translate-x-[-100%] transition ease-linear">
+        <div id="close-Menu" class="mb-5 flex flex-row-reverse text-white text-2xl">
+            <a href="#"><i class="fas fa-times lg:hidden"></i></a>
+        </div>
+        <ul id="mobile__items" class="w-[200px]bg-neutral-500 text-[#fff]">
+            <li class="mb-5"><a href="#">About</a></li>
+            <li class="mb-5"><a href="#">Locations</a></li>
+            <li class="mb-5"><a href="#">Workplaces</a></li>
+            <li class="mb-5"><a href="#">Ideas</a></li>
+            <div class="mt-20">
+                <li class="mb-5"><a href="#">Contact</a></li>
+                <li class="mb-5"><a href="#">Login</a></li>
+            </div>
+        </ul>
+    </div>
+    <header class="flex justify-between items-center lg:w-[95%] mx-auto px-2 ">
+        <div id="open-Menu" class="lg:hidden">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- BRAND -->
+        <div class="flex items-center text-[#064420]">
+            <a href="#" class="font-medium lg:text-2xl lg:font-bold">GREENBASE</a>
+            <i class="fas fa-leaf lg:text-xl"></i>
+        </div>
+        <!-- DESKTOP NAV -->
+        <ul id="desktop__nav" class="hidden lg:flex lg:justify-between lg:w-[25%] text-[#064420] font-bold">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Workplaces</a></li>
+            <li><a href="#">Ideas</a></li>
+        </ul>
+        <div class="flex text-sm">
+            <button
+                class="py-1 px-1 bg-[#064420] text-[#fff] font-medium rounded-md lg:rounded-lg lg:py-2 lg:px-4 mr-2 lg:mr-4">Contact</button>
+            <div class="flex items-center text-[#064420]">
+                <button class="hidden lg:block font-bold">Login</button>
+                <i class="fas fa-user lg:ml-2"></i>
+            </div>
+        </div>
+    </header>
+    <div class="mt-10 flex flex-col p-3 lg:flex-row lg:grid lg:grid-cols-4 lg:p-12 lg:gap-x-10">
+        <!-- CONTENT LEFT -->
+        <div class="col-span-1">
+            <h1 class="font-bold text-[#064420] mb-10 lg:mb-14 text-4xl lg:text-6xl">FRESH IDEAS IN GREEN PLACES</h1>
+            <p class="text-gray33 mb-10">
+                Whether you’re an established enterprise or a growing startup, discover flexible spaces and solutions to
+                move your business forward.
+            </p>
+            <!-- FIND YOUR DESK BTN -->
+            <button
+                class="w-full py-1 px-3 bg-[#064420] text-[#fff] lg:w-[200px] lg:py-3 lg:px-6 cursor-pointer lg:hover:bg-green-700 lg:transition-all mb-10 lg:mb-96">FIND
+                YOUR
+                DESK
+            </button>
+            <!-- LOCATION -->
+            <div class="text-[#757575] font-thin">
+                <a href="#">ALL OFFICES</a>
+                <i class="fas fa-arrow-right mx-2 lg:mx-10"></i>
+                <a href="#">HO CHI MINH CITY</a>
+            </div>
+        </div>
+        <!-- CONTENT RIGHT -->
+        <div class="lg:col-start-2 lg:col-span-3">
+            <!-- SEARCH-BAR -->
+            <form
+                class="w-full border border-4-[#757575] pl-3 lg:pl-10 flex justify-between flex-nowrap h-10 lg:h-11 mb-4 mt-10 lg:mt-0">
+                <input type="text" placeholder="Search by City or Address" name="search"
+                    class="w-[95%] bg-[#FAF1E6] text-[#757575]">
+                <button type="submit" class="w-[100px] border border-l-2"><i
+                        class="fas fa-search lg:text-xl"></i></button>
+            </form>
+            <!-- SWIPER DESKTOP -->
+            <div class="swiper mySwiper h-[400px]">
+                <div class="swiper-wrapper hidden lg:block">
+                    <div class="swiper-slide"><img src="./img/carousel-1-copernico-p_kICQCOM4s-unsplash.jpg"
+                            class="w-full h-full object-cover" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./img/carousel-2-pexels-alexander-suhorucov-6457495.jpg"
+                            class="w-full h-full object-cover" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./img/carousel-3-austin-distel-wawEfYdpkag-unsplash.jpg"
+                            class="w-full h-full object-cover" alt="">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="./img/carousel-4-claudio-schwarz-purzlbaum-_wDZkpybAfY-unsplash.jpg"
+                            class="w-full h-full object-cover" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/carousel-5-shridhar-gupta-dZxQn4VEv2M-unsplash.jpg"
+                            class="w-full h-full object-cover" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/carousel-6pexels-cottonbro-4827565.jpg"
+                            class="w-full h-full object-cover" alt=""></div>
+                </div>
+                <div class="swiper-button-next text-[#fff]"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="flex flex-col mt-10">
+                <h2 class="mx-auto font-bold text-xl lg:text-2xl text-[#064420]">
+                    WHERE ARE YOU AT?
+                </h2>
+                <a href="#" class="ml-auto text-[#064420] cursor-pointer">View more</a>
+            </div>
+            <div class="bg-[#E4EFE7] w-full px-16 py-12 rounded-xl">
+                <ul class="flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:w-full">
+                    <li class="w-full h-full lg:w-[150px] lg:h-[150px] mb-20 lg:mb-0 mx-auto">
+                        <img src="./img/xu-yalan-PO8DarM_3ck-unsplash.jpg"
+                            class="w-full h-full object-cover drop-shadow-lg mb-4 " alt="">
+                        <h5 class="font-thin">Ho Chi Minh</h5>
+                    </li>
+                    <li class="w-full h-full lg:w-[150px] lg:h-[150px] mb-20 lg:mb-0 mx-auto">
+                        <img src="./img/markus-winkler-P42Sl1EViZ4-unsplash.jpg"
+                            class="w-full h-full object-cover drop-shadow-lg mb-4" alt="">
+                        <h5 class="font-thin">Ha Noi</h5>
+                    </li>
+                    <li class="w-full h-full lg:w-[150px] lg:h-[150px] mb-20 lg:mb-0 mx-auto">
+                        <img src="./img/andrea-ferrario-tW3clBU2p-Q-unsplash.jpg"
+                            class="w-full h-full object-cover drop-shadow-lg mb-4" alt="">
+                        <h5 class="font-thin">Da Nang</h5>
+                    </li>
+                    <li class="w-full h-full lg:w-[150px] lg:h-[150px] mb-9 lg:mb-0 mx-auto">
+                        <img src="./img/carrie-hays-mdLoaKr9vt8-unsplash.jpg"
+                            class="w-full h-full object-cover drop-shadow-lg mb-4" alt="">
+                        <h5 class="font-thin">Nha Trang</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
