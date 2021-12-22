@@ -16,5 +16,13 @@
   "dependencies": {
     "swiper": "latest",
     "parcel-bundler": "^1.6.1"
+  },
+  "tags": [
+    "swiperSolution"
+  ],
+  "name": "Swiper - Slides per view auto",
+  "dependencies": {
+    "swiper": "latest",
+    "parcel-bundler": "^1.6.1"
   }
 }

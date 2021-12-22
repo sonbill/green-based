@@ -15,7 +15,16 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
+// SWIPER SOLUTIONS
+var swiperSolution = new Swiper(".mySwiperSolution", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+// 
 const closeBtn = document.getElementById("close-Menu")
 const openBtn = document.getElementById("open-Menu")
 const overLay = document.getElementById("over-Lay")
