@@ -475,6 +475,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 65px;
 }
 
+.z-\[10000px\] {
+  z-index: 10000px;
+}
+
+.z-\[10000\] {
+  z-index: 10000;
+}
+
+.z-\[100\] {
+  z-index: 100;
+}
+
 .order-1 {
   order: 1;
 }
