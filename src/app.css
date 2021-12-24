@@ -53,3 +53,32 @@ body {
   align-items: center;
 }
 
+/* CONTENT 4 */
+.tabs .tab-header > div.active {
+  color:#00acee;
+  }
+.tabs .tab-header > div {
+    width: calc(100%/3);
+    text-align:center;
+    color: #888;
+    font-weight: 600;
+    cursor: pointer;
+    font-size:14px;
+    text-transform: uppercase;
+    outline: none;
+  }
+.tabs .tab-body > div.active {
+  top: 20px;
+  opacity: 1;
+  transform:scale(1);
+  margin-top:0px;
+  }
+  .tabs .tab-body > div {
+    position:absolute;
+    top:-200%;
+    opacity: 0;
+    margin-top: 50px;
+    transform: scale(0.9);
+    /* transition: opacity 500ms ease-in-out 0ms; */
+    transition: transform 500ms ease-in-out 0ms;
+    }
