@@ -24,6 +24,10 @@ body {
     left: 0; 
 } */
 
+img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -55,12 +59,12 @@ body {
 
 /* CONTENT 4 */
 .tabs .tab-header > div.active {
-  color:#00acee;
+  color:#064420;
   }
 .tabs .tab-header > div {
     width: calc(100%/3);
     text-align:center;
-    color: #888;
+    color: #757575;
     font-weight: 600;
     cursor: pointer;
     font-size:14px;
@@ -69,14 +73,15 @@ body {
   }
 .tabs .tab-body > div.active {
   top: 20px;
-  opacity: 1;
+  /* opacity: 1; */
   transform:scale(1);
   margin-top:0px;
+  display: block;
   }
   .tabs .tab-body > div {
     position:absolute;
-    top:-200%;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     margin-top: 50px;
     transform: scale(0.9);
     /* transition: opacity 500ms ease-in-out 0ms; */
