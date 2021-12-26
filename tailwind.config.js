@@ -18,6 +18,9 @@ module.exports = {
         'desktop': '1280px',
         // => @media (min-width: 1280px) { ... }
       },
+      backgroundImage: {
+        'office': "url('./img/office-photo-1497366811353-6870744d04b2.jpeg')",
+      },
     },
   },
   plugins: [],
