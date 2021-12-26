@@ -331,54 +331,59 @@
         </div>
     </div>
     <!-- CONTENT 5 -->
-    <div class="relative mt-40">
-
+    <div class="relative mt-32 mb-10">
         <img src="./img/office-photo-1497366811353-6870744d04b2.jpeg" alt=""
-            class="flex mx-auto w-[70%] hidden md:block lg:block rounded-lg">
+            class="flex mx-auto w-[70%] hidden md:block lg:block rounded-lg object-cover">
         <div
             class="px-10 py-14 bg-white w-[100%] md:w-[50%] lg:w-[50%] absolute sm:items-center md:top-[17%] md:left-[25%] lg:top-[17%] lg:left-[25%] rounded-lg">
-
             <div class="w-ful px-3 mb-8">
-                <h1 class="font-bold text-3xl mb-8">Cùng khởi đầu sự hợp tác tốt đẹp</h1>
-                <p class="">Hãy điền vào mẫu bên dưới để một thành viên của nhóm chúng tôi liên hệ và tìm hiểu
-                    thêm
-                    về nhu cầu
-                    nơi làm việc của bạn.</p>
+                <h1 class="font-bold text-3xl mb-8">Our partnership starts here</h1>
+                <p class="">Complete the form below and a member of our team will get in contact to learn more about
+                    your workplace needs.</p>
             </div>
             <div class="">
-                <form class="flex flex-col mb-3">
+                <form class="flex flex-col">
                     <div class="flex flex-col lg:flex-row md:flex-row items-center justify-between mt-4">
                         <div class='w-full md:w-1/2 px-3 mb-6 md:mb-0 lg:mb-0'>
                             <input
                                 class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-[#1b6d3d]'
-                                type='text' placeholder='Họ tên' required>
+                                type='text' placeholder='Fullname' required>
                         </div>
                         <div class='w-full md:w-1/2 px-3 mb-2 md:mb-0 lg:mb-0'>
                             <input
                                 class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-[#1b6d3d]'
-                                type='text' placeholder='Email công việc' required>
+                                type='text' placeholder='Work email' required>
                         </div>
                     </div>
                     <div class="flex flex-col lg:flex-row md:flex-row items-center justify-between mt-4">
                         <div class="w-full md:w-1/2 px-3 mb-6">
                             <input
                                 class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-[#1b6d3d]'
-                                type='text' placeholder='Số điện thoại' required>
+                                type='text' placeholder='Phone number' required>
                         </div>
-                        <div class="w-full md:w-1/2 px-3 mb-6">
-                            <select
-                                class="block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-[10px] rounded-md">
-                                <option>...</option>
-                                <option>1-20</option>
-                                <option>20-100</option>
-                                <option>100-1000</option>
-                                <option>1000+</option>
-                            </select>
+                        <div class='w-full md:w-1/2 px-3 mb-6'>
+                            <div class="flex-shrink w-full inline-block relative">
+                                <select
+                                    class="block appearance-none text-gray-400 w-full bg-white border border-gray-400 shadow-inner px-4 py-[10px] rounded-md">
+                                    <option>Company size...</option>
+                                    <option>1-20</option>
+                                    <option>20-100</option>
+                                    <option>100-1000</option>
+                                    <option>1000+</option>
+                                </select>
+                                <div
+                                    class="pointer-events-none absolute top-0 mt-3  right-0 flex items-center px-2 text-gray-600">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class='w-full md:w-full px-3 mb-6'>
-                        <textarea name="" id="" cols="30" rows="5"
-                            placeholder="Bạn có muốn chia sẽ thông tin khác không?"
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Additional Notes"
                             class="bg-white rounded-md border leading-normal resize-none w-full h-20 py-2 px-3 shadow-inner border border-gray-400 placeholder-gray-400 focus:outline-none focus:border-[#1b6d3d]"
                             required></textarea>
                     </div>
@@ -386,25 +391,89 @@
                 <div class="mb-8">
                     <div class='w-full md:w-full px-3 mb-6'>
                         <input type="checkbox">
-                        <p class="inline"> Bằng việc nhấp vào nút bên dưới, bạn đồng ý với
-                            <a class="text-[#1b6d3d] cursor-pointer hover:underline">Điều khoản Dịch vụ</a>
-                            và thừa nhận
-                            <a class="text-[#1b6d3d] cursor-pointer hover:underline">Chính sách Quyền riêng tư Toàn
-                                cầu</a>
-                            của chúng tôi.
+                        <p class="inline"> By clicking the button below, you agree to our
+                            <a class="text-[#1b6d3d] cursor-pointer hover:underline">Terms of Service </a>
+                            and acknowledge our
+                            <a class="text-[#1b6d3d] cursor-pointer hover:underline">Global Privacy Policy.</a>
                         </p><br>
                     </div>
                 </div>
                 <div class="w-full md:w-full px-3">
                     <button type="submit"
-                        class="text-white shadow-sm rounded-md p-3 bg-[#064420] lg:hover:bg-[#1b6d3d] transition-all">Bắt
-                        đầu trò
-                        chuyện</button>
+                        class=" w-full lg:w-[180px] text-white shadow-sm rounded-md p-3 bg-[#064420] lg:hover:bg-[#1b6d3d] transition-all">Start
+                        a conversion</button>
                 </div>
             </div>
         </div>
-        <footer></footer>
     </div>
+    <!-- FOOTER -->
+    <footer class="p-5 lg:p-20 bg-[#E4EFE7] mt-[80px]">
+        <div class="flex flex-col w-[100%] justify-center">
+            <!-- SOCIAL LOGO -->
+            <div class="flex flex-col-reverse lg:flex-row w-full justify-between">
+                <div class="flex justify-start text-[#064420] mb-8 lg:mb-0">
+                    <a href="#" class="font-bold">GREENBASE</a>
+                    <i class="fas fa-leaf lg:text-xl"></i>
+                </div>
+                <div
+                    class="flex justify-center items-center text-2xl lg:text-[19px] mb-10 w-[60%] mx-auto lg:mx-0 p-10 lg:p-0 lg:w-[10%]">
+                    <a href="#"><i class="fab fa-facebook-f mr-8"></i></a>
+                    <a href="#"><i class="fab fa-instagram mr-8"></i></a>
+                    <a href="#"><i class="fab fa-twitter mr-8"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mb-20">
+                <div class="flex flex-col leading-8 mb-7">
+                    <h5 class="mb-3 text-gray-500 text-sm">COMPANY</h5>
+                    <a href="#" class="hover:underline font-md">Global locations</a>
+                    <a href="#" class="hover:underline font-md">Inclusion & Diversity</a>
+                    <a href="#" class="hover:underline font-md">Careers</a>
+                    <a href="#" class="hover:underline font-md">Investors</a>
+                    <a href="#" class="hover:underline font-md">Newsroom</a>
+                </div>
+                <div class="flex flex-col leading-8 mb-7">
+                    <h5 class="mb-3 text-gray-500 text-sm">PARTNERSHIPS</h5>
+                    <a href="#" class="hover:underline font-md">Brokers</a>
+                    <a href="#" class="hover:underline font-md">Landlords</a>
+                    <a href="#" class="hover:underline font-md">Refer a Friend</a>
+                    <a href="#" class="hover:underline font-md">Event planners</a>
+                </div>
+                <div class="flex flex-col leading-8 mb-7">
+                    <h5 class="mb-3 text-gray-500 text-sm">IMPACT</h5>
+                    <a href="#" class="hover:underline font-md">Purpose</a>
+                    <a href="#" class="hover:underline font-md">Veterans in Residence</a>
+                </div>
+                <div class="flex flex-col leading-8 mb-7">
+                    <h5 class="mb-3 text-gray-500 text-sm">SUPPORT</h5>
+                    <a href="#" class="hover:underline font-md">COVID Response</a>
+                    <a href="#" class="hover:underline font-md">FAQ</a>
+                    <a href="#" class="hover:underline font-md">Contact us</a>
+                </div>
+            </div>
+            <div class="flex justify-between lg:flex-row flex-col w-full">
+                <div class="leading-7 font-light lg:mb-0 mb-10">
+                    <p>(+84) 389-3922</p>
+                    <p>Greenbase VN</p>
+                    <p>Saigonres 15th Floor, 188 Nguyen Xi</p>
+                    <p>Binh Thanh District, Ho Chi Minh, Vietnam</p>
+                </div>
+                <div class="w-full lg:w-[50%] flex flex-col justify-center">
+                    <div
+                        class="flex justify-around flex-wrap lg:flex-nowrap mb-5 text-[#1b6d3d] text-md w-full lg:w-[90%]">
+                        <a href="#" class="hover:underline">Privacy</a>
+                        <a href="#" class="hover:underline">Terms</a>
+                        <a href="#" class="hover:underline">Cookies Policy</a>
+                        <a href="#" class="hover:underline">Accessibility</a>
+                        <a href="#" class="hover:underline">Sitemap</a>
+                    </div>
+                    <div class="text-gray-700 font-light text-sm">
+                        <p class="text-center">Copyright © 2021 WeWork Management LLC All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src=" https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
